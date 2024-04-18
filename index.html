@@ -1,13 +1,104 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Home - Alejandro | Sitio personal</title>
+</head>
+
+<body>
+  <div class="bg-primary">
+    <div class="px-6 py-12">
+      <div class="flex justify-between gap-6">
+        <header class="flex flex-col sticky justify-between bg-secondary rounded-lg w-1/2 py-24">
+          <div class="flex flex-col items-center justify-center text-center text-white gap-8 p-4">
+            <img src="/avatar.png" class="w-20 h-20 rounded-full" alt="avatar">
+            <h1 class="text-4xl font-bold text-white"><a href="">Alejandro Moya Peris</a></h1>
+            <h2>Desarrollador de Aplicaciones Web</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies dui eget odio vehicula, id
+              ultrices
+              tellus vulputate. Phasellus sit amet erat pellentesque massa varius euismod. Aliquam erat volutpat. Nam
+              maximus nec tellus nec aliquet. Donec magna magna, ornare a enim vitae, lacinia mattis velit. Suspendisse
+              et
+              fermentum urna. Mauris in accumsan nibh. Sed sapien ex, cursus et purus sit amet, suscipit malesuada
+              tellus.
+              Fusce imperdiet hendrerit libero vel suscipit. Mauris viverra lorem orci, non sagittis turpis tempor nec.
+              Nunc vel quam ipsum. Sed efficitur fermentum odio, auctor gravida sapien.</p>
+          </div>
+        </header>
+
+        <main id="content" class="w-1/2 py-24">
+          <section>
+            <div class="flex justify-between items-center">
+              <div class="bg-tertiary px-1 py-1 w-auto rounded-full">
+                <input class="w-auto rounded-full" type="text" placeholder=" Buscar...">
+              </div>
+              <label class="bg-tertiary px-1 py-1 w-[52px] rounded-full">
+                <div class="w-6 h-6 rounded-full bg-secondary"></div>
+                <input id="check" type="text" hidden>
+              </label>
+            </div>
+          </section>
+
+          <!-- NavMenu -->
+          <section>
+            <div class="flex justify-between items-center">
+              <nav class="h-20 flex">
+                <div class="flex items-center gap-6">
+                  <a href="#experiencia">Experiencia</a>
+                  <a href="#proyectos">Proyectos</a>
+                  <a href="#contacto">Contacto</a>
+                </div>
+              </nav>
+            </div>
+          </section>
+
+          <!-- Contenido -->
+          <section id="experiencia"></section>
+
+          <section id="proyectos">
+            <div class="flex rounded-lg justify-between py-24 bg-secondary">
+              <span>
+                <li class="mb-6 checkmark">
+                  <!-- Titulo y fecha -->
+                  <div class="flex flex-wrap items-start gap-x-2">
+                    <div class="flex flex-no-wrap items-center flex-1 whitespace-nowrap">
+                      <div>Proyecto 1</div>
+                      <div class="ml-2 text-sm">- blabla</div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="text-xs text-right text-gray-500 whitespace-nowrap">01/01/2001</div>
+                    </div>
+                  </div>
+
+                  <!-- Descripción -->
+                  <div class="mt-2 text-lg text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque mi sem. Praesent commodo
+                    sapien a diam congue semper. Fusce scelerisque, enim suscipit egestas iaculis, enim erat ullamcorper
+                    nisi, id ultricies magna est non ipsum.
+                  </div>
+
+                  <!-- Botones -->
+                  <div class="flex gap-4 mt-3"></div>
+                </li>
+              </span>
+            </div>
+          </section>
+
+          <section id="contacto"></section>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<footer></footer>
+
+<script type="module" src="/main.js"></script>
+
 </html>
