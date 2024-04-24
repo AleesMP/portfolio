@@ -12,8 +12,8 @@
 <body>
   <div class="bg-primary">
     <div class="px-6 py-12">
-      <div class="flex justify-between gap-6">
-        <header class="flex flex-col sticky justify-between bg-secondary rounded-lg w-1/2 py-24">
+      <div class="lg:flex lg:justify-between lg:gap-4">
+        <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-10 bg-secondary rounded-lg">
           <div class="flex flex-col items-center justify-center text-center text-white gap-8 p-4">
             <img src="./assets/images/avatar.png" class="w-20 h-20 rounded-full" alt="avatar">
             <h1 class="text-4xl font-bold text-white"><a href="">Alejandro Moya Peris</a></h1>
@@ -30,8 +30,8 @@
           </div>
         </header>
 
-        <main id="content" class="w-1/2 py-24">
-          <section>
+        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+          <!-- <section>
             <div class="flex justify-between items-center">
               <div class="bg-tertiary px-1 py-1 w-auto rounded-full">
                 <input class="w-auto rounded-full" type="text" placeholder=" Buscar...">
@@ -41,25 +41,33 @@
                 <input id="check" type="text" hidden>
               </label>
             </div>
-          </section>
+          </section> -->
 
-          <!-- NavMenu -->
+          <!-- Navbar -->
           <section>
-            <div class="flex justify-between items-center">
-              <nav class="h-20 flex">
-                <div class="flex items-center gap-6">
-                  <a href="#experiencia">Experiencia</a>
-                  <a href="#proyectos">Proyectos</a>
-                  <a href="#contacto">Contacto</a>
-                </div>
+            <div class="flex justify-center items-center h-20">
+              <nav class="flex gap-10">
+                  <a class="menu-item" href="#experiencia">Experiencia</a>
+                  <a class="menu-item" href="#proyectos">Proyectos</a>
+                  <a class="menu-item" href="#contacto">Contacto</a>
               </nav>
             </div>
           </section>
 
           <!-- Contenido -->
-          <section id="experiencia"></section>
+          <section id="experiencia" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies dui eget odio vehicula, id
+              ultrices
+              tellus vulputate. Phasellus sit amet erat pellentesque massa varius euismod. Aliquam erat volutpat. Nam
+              maximus nec tellus nec aliquet. Donec magna magna, ornare a enim vitae, lacinia mattis velit. Suspendisse
+              et
+              fermentum urna. Mauris in accumsan nibh. Sed sapien ex, cursus et purus sit amet, suscipit malesuada
+              tellus.
+              Fusce imperdiet hendrerit libero vel suscipit. Mauris viverra lorem orci, non sagittis turpis tempor nec.
+              Nunc vel quam ipsum. Sed efficitur fermentum odio, auctor gravida sapien.</p>
+          </section>
 
-          <section id="proyectos">
+          <section id="proyectos" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
             <div class="flex rounded-lg justify-between py-24 bg-secondary">
               <span>
                 <li class="mb-6 checkmark">
@@ -88,7 +96,26 @@
             </div>
           </section>
 
-          <section id="contacto"></section>
+          <section id="contacto" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+              <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-secondary rounded-lg">
+                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contacto:</h2>
+                  <form action="#contacto" class="space-y-8">
+                    <div>
+                      <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nombre:</label>
+                      <input type="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Tu nombre o intitución" required>
+                  </div>
+                      <div>
+                          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Correo electrónico: *</label>
+                          <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="ejemplo@ejemplo.es" required>
+                      </div>
+                      <div class="sm:col-span-2">
+                          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Mensaje:</label>
+                          <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Introduce tu mensaje aqui"></textarea>
+                      </div>
+                      <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Enviar</button>
+                  </form>
+              </div>
+          </section>
 
         </main>
       </div>
