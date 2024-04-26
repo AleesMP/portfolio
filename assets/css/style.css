@@ -806,3 +806,36 @@ video {
 }
 /* --- */
 
+/* Proyectos */
+  /* Efecto desenfoque */
+  .highlight-on-hover li {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+
+  /* Estilo para los elementos <li> que tienen hover */
+  .highlight-on-hover li:hover {
+    transform: scale(1.02) translateY(-3px);
+    filter: blur(0);
+  }
+
+  /* Estilo para los elementos <li> que no tienen hover */
+  .highlight-on-hover:hover li:not(:hover) {
+    filter: blur(2px);
+  }
+
+  /* Estilo del bg al hacer hover */
+  #lista-proyectos li .project-details {
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    padding: 1.5rem;
+    min-width: 300px;
+    min-height: 200px;
+    
+  }
+
+  #lista-proyectos li:hover .project-details {
+    background-color: #3B4252;
+    border-radius: 0.75rem;
+    color: white;
+  }
+
+/* --- */

@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -66,15 +68,18 @@
 
           <!-- Contenido -->
           <section id="experiencia" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
-            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-secondary rounded-lg shadow-xl shadow-blue-500">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <ol class="relative border-s border-gray-200 dark:border-gray-700">
                 <li class="mb-10 ms-4">
                   <div
                     class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                   </div>
-                  <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-                  <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a
+                  <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February
+                    2022</time>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS
+                  </h3>
+                  <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages
+                    including a
                     dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
                 </li>
                 <li class="mb-10 ms-4">
@@ -83,7 +88,8 @@
                   </div>
                   <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
                   <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are
+                    first
                     designed in Figma and we keep a parity between the two versions even as we update the project.</p>
                 </li>
                 <li class="ms-4">
@@ -91,107 +97,95 @@
                     class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                   </div>
                   <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS
+                  </h3>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
+                    components and
                     interactive elements built on top of Tailwind CSS.</p>
                 </li>
+
               </ol>
             </div>
           </section>
 
-          <!-- <section id="experiencia" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
-            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-secondary rounded-lg shadow-xl shadow-blue-500 list-none">
-              <ol>
-                <li class="mb-12">
-                  <div
-                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                    <div
-                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                    </div>
-                    <header
-                      class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-                      Enero 2024
-                    </header>
-                    <div class="z-10 sm:col-span-6">
-                      <h3 class="font-medium leading-snug text-slate-200">
-                        <div>
-                          <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                            href="https://www.klaviyo.com" target="_blank" rel="noreferrer noopener"
-                            aria-label="Senior Frontend Engineer, Accessibility at Klaviyo (opens in a new tab)">
-                            <span
-                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                            <span>Ejemplo 1 · blablabla
-                              <span
-                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                          </a>
-                          <p class="mt-2 text-sm leading-normal"> Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Duis
-                            ultricies dui eget odio vehicula, id ultrices tellus vulputate.
-                            Phasellus sit amet erat pellentesque massa varius euismod.
-                            Aliquam erat volutpat. Nam maximus nec tellus nec aliquet. Donec
-                            magna magna, ornare a enim vitae, lacinia mattis velit.
-                            Suspendisse et fermentum urna. Mauris in accumsan nibh.</p>
-                          <ul class="mt-2 flex flex-wrap">
-                            <li class="mr-1.5 mt-2">
-                              <div
-                                class="flex items-center rounded-full bg-tertiary px-3 py-1 text-xs font-medium leading-5 text-slate-200">
-                                JavaScript</div>
-                            </li>
-                            <li class="mr-1.5 mt-2">
-                              <div
-                                class="flex items-center rounded-full bg-tertiary px-3 py-1 text-xs font-medium leading-5 text-slate-200">
-                                TypeScript</div>
-                            </li>
-                            <li class="mr-1.5 mt-2">
-                              <div
-                                class="flex items-center rounded-full bg-tertiary px-3 py-1 text-xs font-medium leading-5 text-slate-200">
-                                React</div>
-                            </li>
-                            <li class="mr-1.5 mt-2">
-                              <div
-                                class="flex items-center rounded-full bg-tertiary px-3 py-1 text-xs font-medium leading-5 text-slate-200">
-                                Storybook</div>
-                            </li>
-                          </ul>
-                        </div>
-                      </h3>
-                    </div>
-                  </div>
-                </li>
-              </ol>
-            </div>
-          </section> -->
-
           <section id="proyectos" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
-            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-secondary rounded-lg shadow-xl shadow-blue-500 list-none">
-              <span>
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+              <ul id="lista-proyectos" class="highlight-on-hover">
                 <li class="mb-6 checkmark">
-                  <!-- Titulo y fecha -->
-                  <div class="flex flex-wrap items-start gap-x-2">
-                    <div class="flex flex-no-wrap items-center flex-1 whitespace-nowrap">
-                      <div>Proyecto 1</div>
-                      <div class="ml-2 text-sm">- blabla</div>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <div class="text-xs text-right text-gray-500 whitespace-nowrap">
-                        01/01/2001
+                  <a href="/">
+                    <div class="project-details">
+                      <!-- Titulo y fecha -->
+                      <div class="flex flex-wrap items-start gap-x-2">
+                        <div class="flex flex-no-wrap flex-1 items-center whitespace-nowrap">
+                          <span class="ease-in-out">Proyecto 1 |
+                            <span class="inline-block">Ejemplo
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                  clip-rule="evenodd"></path>
+                              </svg>
+                            </span>
+                          </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <time class="text-xs text-right text-gray-500 whitespace-nowrap">01/01/2001</time>
+                        </div>
                       </div>
+
+                      <!-- Descripción -->
+                      <div class="mt-2 text-lg text-gray-500 transition-all duration-300 ease-in-out">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque mi sem. Praesent
+                        commodo sapien a diam
+                        congue semper. Fusce scelerisque, enim suscipit egestas iaculis, enim erat ullamcorper nisi, id
+                        ultricies magna
+                        est non ipsum.
+                      </div>
+
+                      <!-- Botones -->
+                      <div class="flex gap-4 mt-3"></div>
                     </div>
-                  </div>
-
-                  <!-- Descripción -->
-                  <div class="mt-2 text-lg text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In pellentesque mi sem. Praesent commodo sapien a diam
-                    congue semper. Fusce scelerisque, enim suscipit egestas
-                    iaculis, enim erat ullamcorper nisi, id ultricies magna
-                    est non ipsum.
-                  </div>
-
-                  <!-- Botones -->
-                  <div class="flex gap-4 mt-3"></div>
+                  </a>
                 </li>
-              </span>
+                <li class="mb-6 checkmark">
+                  <a href="/">
+                    <div class="project-details">
+                      <!-- Titulo y fecha -->
+                      <div class="flex flex-wrap items-start gap-x-2">
+                        <div class="flex flex-no-wrap flex-1 items-center whitespace-nowrap">
+                          <span class="ease-in-out">Proyecto 2 |
+                            <span class="inline-block">Ejemplo
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                  clip-rule="evenodd"></path>
+                              </svg>
+                            </span>
+                          </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <time class="text-xs text-right text-gray-500 whitespace-nowrap">01/01/2001</time>
+                        </div>
+                      </div>
+
+                      <!-- Descripción -->
+                      <div class="mt-2 text-lg text-gray-500 transition-all duration-300 ease-in-out">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque mi sem. Praesent
+                        commodo sapien a diam
+                        congue semper. Fusce scelerisque, enim suscipit egestas iaculis, enim erat ullamcorper nisi, id
+                        ultricies magna
+                        est non ipsum.
+                      </div>
+
+                      <!-- Botones -->
+                      <div class="flex gap-4 mt-3"></div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </section>
 
@@ -236,6 +230,4 @@
 
 <footer></footer>
 
-<script type="module" src="/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </html>
