@@ -1,10 +1,7 @@
-// Get the 'to top' button element by ID
+// To-top-button
 var toTopButton = document.getElementById("to-top-button");
 
-// Check if the button exists
 if (toTopButton) {
-
-    // On scroll event, toggle button visibility based on scroll position
     window.onscroll = function() {
         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             toTopButton.classList.remove("hidden");
@@ -13,7 +10,6 @@ if (toTopButton) {
         }
     };
 
-    // Function to scroll to the top of the page smoothly
     window.goToTop = function() {
         window.scrollTo({
             top: 0,
@@ -21,3 +17,74 @@ if (toTopButton) {
         });
     };
 }
+
+// Subrayado del menu al scrolear por seccion
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll(".section");
+    const menuItems = document.querySelectorAll(".menu-item");
+  
+    function highlightMenuItem() {
+      sections.forEach((section) => {
+        const top = section.offsetTop - 100;
+        const bottom = top + section.clientHeight;
+        const scrollPosition = window.scrollY;
+  
+        if (scrollPosition >= top && scrollPosition < bottom) {
+          const id = section.id;
+          menuItems.forEach((item) => {
+            if (item.getAttribute("href") === `#${id}`) {
+              item.classList.add("active");
+            } else {
+              item.classList.remove("active");
+            }
+          });
+        }
+      });
+    }
+  
+    window.addEventListener("scroll", highlightMenuItem);
+  });
+  
+
+// Switcher oscuro/claro
+const sunIcon = document.querySelector(".sun");
+const moonIcon = document.querySelector(".moon");
+
+const userTheme = localStorage.getItem("theme");
+const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const iconToggle = () => {
+    moonIcon.classList.toggle("display-none");
+    sunIcon.classList.toggle("display-none");
+};
+
+const themeCheck = () => {
+    if (userTheme === "dark" || (!userTheme && systemTheme)) {
+        document.documentElement.classList.add("dark");
+        moonIcon.classList.add("display-none");
+        return;
+    }
+    sunIcon.classList.add("display-none");
+};
+
+const themeSwitch = () => {
+    if (document.documentElement.classList.contains("dark")) {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+        iconToggle();
+        return;
+    }
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+    iconToggle();
+};
+
+sunIcon.addEventListener("click", () => {
+    themeSwitch();
+});
+
+moonIcon.addEventListener("click", () => {
+    themeSwitch();
+});
+
+themeCheck();
