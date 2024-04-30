@@ -752,24 +752,33 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-/* Animación underline navmenu */
-.link-underline {
-  border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-  background-size: 0 3px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size .2s ease-in-out;
-}
+/* Menu navegacion */
+  /* Animación underline */
+  .link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .2s ease-in-out;
+  }
 
-.link-underline-black {
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#3B4252, #E5E9F0)
-}
+  .link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#3B4252, #E5E9F0)
+  }
 
-.link-underline:hover {
-  background-size: 100% 3px;
-  background-position: 0 100%
-}
+  .link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+  }
+
+  .active {
+    text-decoration: underline;
+    text-decoration-color: #3B4252;
+    text-decoration-thickness: 3px;
+  }
+  
+/* --- */
 
 /* Animación emoji saludo */
 .emoji {
@@ -837,4 +846,10 @@ video {
     border-radius: 0.75rem;
   }
 
+/* --- */
+
+/* Switcher dark/light */
+.display-none {
+  @apply hidden;
+}
 /* --- */

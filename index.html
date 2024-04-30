@@ -15,32 +15,36 @@
 
 <body>
   <div class="bg-primary">
-    <div class="px-6 py-12">
+    <div class="px-6 py-6 md:px-12 md:py-20 lg:px-24 lg:py-0 mx-auto min-h-screen">
       <div class="lg:flex lg:justify-between lg:gap-4"> 
         <header
-          class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-10 bg-secondary rounded-lg mb-10">
+          class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-10">
           <div class="flex flex-col items-center justify-center text-center text-white gap-8 p-4">
             <img src="./assets/images/avatar.png" class="w-20 h-20 rounded-full" alt="avatar" />
-
-            <h1 class="text-4xl font-bold text-white">
-              <!-- <span class="flex justify-center items-center emoji">👋🏻</span> -->
-              <a href="/">Lorem ipsum dolor</a>
-            </h1>
-            <h2>Lorem ipsum dolor sit</h2>
-            <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              ultricies dui eget odio vehicula, id ultrices tellus vulputate.
-              Phasellus sit amet erat pellentesque massa varius euismod.
-              Aliquam erat volutpat. Nam maximus nec tellus nec aliquet. Donec
-              magna magna, ornare a enim vitae, lacinia mattis velit.
-              Suspendisse et fermentum urna. Mauris in accumsan nibh. Sed
-              sapien ex, cursus et purus sit amet, suscipit malesuada tellus.
-              Fusce imperdiet hendrerit libero vel suscipit. Mauris viverra
-              lorem orci, non sagittis turpis tempor nec. Nunc vel quam ipsum.
-              Sed efficitur fermentum odio, auctor gravida sapien.
-            </p>
-          </div>
+            <div>
+              <h4><!-- <span class="flex justify-center items-center emoji">👋🏻</span> --> Hola!</h4>
+              <h3>Bienvenid@ al sitio personal de</h3>
+              <h1 class="text-4xl font-bold text-white">
+                <span class="text-gray-500">&lt;</span>
+                Alejandro Moya Peris
+                <span class="text-gray-500">&lt;/&gt;</span>
+              </h1>
+              <h2>Desarrollador Fullstack</h2>
+              <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                ultricies dui eget odio vehicula, id ultrices tellus vulputate.
+                Phasellus sit amet erat pellentesque massa varius euismod.
+                Aliquam erat volutpat. Nam maximus nec tellus nec aliquet. Donec
+                magna magna, ornare a enim vitae, lacinia mattis velit.
+                Suspendisse et fermentum urna. Mauris in accumsan nibh. Sed
+                sapien ex, cursus et purus sit amet, suscipit malesuada tellus.
+                Fusce imperdiet hendrerit libero vel suscipit. Mauris viverra
+                lorem orci, non sagittis turpis tempor nec. Nunc vel quam ipsum.
+                Sed efficitur fermentum odio, auctor gravida sapien.
+              </p>
+            </div>
+            </div>
         </header>
 
         <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
@@ -57,18 +61,27 @@
           </section> -->
 
           <!-- Nav -->
-          <section>
+          <section class="sticky top-0 bg-primary z-50 uppercase">
             <div class="flex justify-center items-center h-20">
               <nav class="flex gap-10">
                 <a href="#experiencia" class="menu-item link link-underline link-underline-black">Experiencia</a>
                 <a href="#proyectos" class="menu-item link-underline link-underline-black">Proyectos</a>
                 <a href="#contacto" class="menu-item link-underline link-underline-black">Contacto</a>
+                <div class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon moon cursor-pointer" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun sun cursor-pointer" viewBox="0 0 16 16">
+                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                  </svg>
+                </div>
               </nav>
             </div>
           </section>
+          
 
           <!-- Contenido -->
-          <section id="experiencia" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+          <section id="experiencia" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 section">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <ol class="relative border-s border-gray-200 dark:border-gray-700">
                 <li class="mb-10 ms-4">
@@ -107,15 +120,17 @@
             </div>
           </section>
 
-          <section id="proyectos" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+          <section id="proyectos" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 section">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <ul id="lista-proyectos" class="highlight-on-hover">
                 <li class="mb-6 checkmark">
                   <a href="/" class="flex items-start">
                     <div class="detalles-proyecto flex items-start">
                       <!-- Miniatura -->
-                      <img loading="lazy" width="200" height="200" class="rounded border-2"
+                      <a href="https://aleesmp-giticket.netlify.app/">
+                        <img width="200" height="200" class="rounded border-2"
                         src="assets/images/giticket.PNG" alt="Giticket app">
+                      </a>
                       <!-- Contenido -->
                       <div class="ml-4">
                         <!-- Titulo fecha -->
@@ -132,33 +147,41 @@
                               </div>
                             </a>
                           </div>
-                          <div class="flex items-center gap-2">
-                            <div class="text-xs text-right text-gray-500 whitespace-nowrap">Mayo 2023</div>
+                          <!-- Fecha y tipo -->
+                          <div class="flex items-center justify-between gap-4">
+                            <div class="text-xs text-right text-gray-500 whitespace-nowrap uppercase">Mayo 2023</div>
+                            <div class="px-2 py-1 leading-none text-orange-400 uppercase border-2 border-orange-400 rounded">Académico</div>
                           </div>
                         </div>
 
                         <!-- Descripción -->
                         <div class="mt-2 text-lg text-gray-500 transition-all duration-300 ease-in-out">
                           Proyecto web para la venta de tickets de cine. <br>
-                          Incluye envío de reserva por correo y validación
-                          de ticket mediante QR.
+                          Incluye envío de reserva por correo, validación
+                          de ticket mediante QR y usuario administrador para 
+                          gestionar la BBDD mediante CRUD.
                         </div>
 
                         <!-- Botones -->
-                        <div class="flex gap-4 mt-3">
+                        <div class="flex justify-between gap-4 mt-3 items-center">
                           <a href="https://vuejs.org/" class="filter grayscale hover:grayscale-0">
-                            <img src="assets/images/vuejs.svg" alt="Vue JS" class="w-6 h6">
+                              <img src="assets/images/vuejs.svg" alt="Vue JS" class="w-6 h-6">
                           </a>
                           <a href="https://tailwindcss.com/" class="filter grayscale hover:grayscale-0">
-                            <img src="assets/images/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
+                              <img src="assets/images/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
                           </a>
                           <a href="https://supabase.com/" class="filter grayscale hover:grayscale-0">
-                            <img src="assets/images/supabase.png" alt="Supabase" class="w-6 h-6">
+                              <img src="assets/images/supabase.png" alt="Supabase" class="w-6 h-6">
                           </a>
                           <a href="https://vitejs.dev/" class="filter grayscale hover:grayscale-0">
-                            <img src="assets/images//vitejs.svg" alt="Vite JS" class="w-6 h-6">
+                              <img src="assets/images//vitejs.svg" alt="Vite JS" class="w-6 h-6">
                           </a>
-                        </div>
+                          <a href="https://github.com/AleesMP/giticket.git" class="flex items-center bg-tertiary hover:bg-gray-300 px-3 py-1 rounded-md">
+                            <img src="assets/images/github.svg" alt="Github" class="w-6 h-6 mr-1">
+                            <span>Código</span>
+                        </a>
+                      </div>
+                      
                       </div>
                     </div>
                 </li>
@@ -166,8 +189,10 @@
                   <a href="/" class="flex items-start">
                     <div class="detalles-proyecto flex items-start">
                       <!-- Miniatura -->
-                      <img loading="lazy" width="200" height="200" class="rounded border-2"
+                      <a href="https://aleesmp-giticket.netlify.app/">
+                        <img width="200" height="200" class="rounded border-2"
                         src="assets/images/giticket.PNG" alt="Giticket app">
+                      </a>
                       <!-- Contenido -->
                       <div class="ml-4">
                         <!-- Titulo fecha -->
@@ -184,41 +209,50 @@
                               </div>
                             </a>
                           </div>
-                          <div class="flex items-center gap-2">
-                            <div class="text-xs text-right text-gray-500 whitespace-nowrap">Mayo 2023</div>
+                          <!-- Fecha y tipo -->
+                          <div class="flex items-center justify-between gap-4">
+                            <div class="text-xs text-right text-gray-500 whitespace-nowrap uppercase">Mayo 2023</div>
+                            <div class="px-2 py-1 leading-none text-orange-400 uppercase border-2 border-orange-400 rounded">Académico</div>
                           </div>
                         </div>
 
                         <!-- Descripción -->
                         <div class="mt-2 text-lg text-gray-500 transition-all duration-300 ease-in-out">
                           Proyecto web para la venta de tickets de cine. <br>
-                          Incluye envío de reserva por correo y validación
-                          de ticket mediante QR.
+                          Incluye envío de reserva por correo, validación
+                          de ticket mediante QR y usuario administrador para 
+                          gestionar la BBDD mediante CRUD.
                         </div>
 
                         <!-- Botones -->
-                        <div class="flex gap-4 mt-3">
+                        <div class="flex justify-between gap-4 mt-3 items-center">
                           <a href="https://vuejs.org/" class="filter grayscale hover:grayscale-0">
-                            <img src="assets/images/vuejs.svg" alt="Vue JS" class="w-6 h6">
+                              <img src="assets/images/vuejs.svg" alt="Vue JS" class="w-6 h-6">
                           </a>
                           <a href="https://tailwindcss.com/" class="filter grayscale hover:grayscale-0">
-                            <img src="assets/images/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
+                              <img src="assets/images/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
                           </a>
                           <a href="https://supabase.com/" class="filter grayscale hover:grayscale-0">
-                            <img src="assets/images/supabase.png" alt="Supabase" class="w-6 h-6">
+                              <img src="assets/images/supabase.png" alt="Supabase" class="w-6 h-6">
                           </a>
                           <a href="https://vitejs.dev/" class="filter grayscale hover:grayscale-0">
-                            <img src="assets/images//vitejs.svg" alt="Vite JS" class="w-6 h-6">
+                              <img src="assets/images//vitejs.svg" alt="Vite JS" class="w-6 h-6">
                           </a>
-                        </div>
+                          <a href="https://github.com/AleesMP/giticket.git" class="flex items-center bg-tertiary hover:bg-gray-300 px-3 py-1 rounded-md">
+                            <img src="assets/images/github.svg" alt="Github" class="w-6 h-6 mr-1">
+                            <span>Código</span>
+                        </a>
+                      </div>
+                      
                       </div>
                     </div>
                 </li>
+                
               </ul>
             </div>
           </section>
 
-          <section id="contacto" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+          <section id="contacto" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 section">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-secondary rounded-lg shadow-xl shadow-blue-500">
               <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center">
                 Contacto:
