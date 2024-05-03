@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="bg-primary">
+  <div class="bg-primary dark:bg-white">
     <div class="px-6 py-6 md:px-12 md:py-20 lg:px-24 lg:py-0 mx-auto min-h-screen">
       <div class="lg:flex lg:justify-between lg:gap-4"> 
         <header
@@ -22,8 +22,8 @@
           <div class="flex flex-col items-center justify-center text-center text-white gap-8 p-4">
             <img src="./assets/images/avatar.png" class="w-20 h-20 rounded-full" alt="avatar" />
             <div>
-              <h4><!-- <span class="flex justify-center items-center emoji">👋🏻</span> --> Hola!</h4>
-              <h3>Bienvenid@ al sitio personal de</h3>
+              <h4><!-- <span class="flex justify-center items-center emoji">👋🏻</span> --> ¡Hola!</h4>
+              <h3>Bienvenido/a al sitio personal de</h3>
               <h1 class="text-4xl font-bold text-white">
                 <span class="text-gray-500">&lt;</span>
                 Alejandro Moya Peris
@@ -63,17 +63,15 @@
           <!-- Nav -->
           <section class="sticky top-0 bg-primary z-50 uppercase">
             <div class="flex justify-center items-center h-20">
-              <nav class="flex gap-10">
+              <nav class="flex gap-10 items-center">
                 <a href="#experiencia" class="menu-item link link-underline link-underline-black">Experiencia</a>
                 <a href="#proyectos" class="menu-item link-underline link-underline-black">Proyectos</a>
                 <a href="#contacto" class="menu-item link-underline link-underline-black">Contacto</a>
                 <div class="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon moon cursor-pointer" viewBox="0 0 16 16">
-                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun sun cursor-pointer" viewBox="0 0 16 16">
-                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
-                  </svg>
+                  <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
                 </div>
               </nav>
             </div>
@@ -124,130 +122,61 @@
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <ul id="lista-proyectos" class="highlight-on-hover">
                 <li class="mb-6 checkmark">
-                  <a href="/" class="flex items-start">
-                    <div class="detalles-proyecto flex items-start">
-                      <!-- Miniatura -->
-                      <a href="https://aleesmp-giticket.netlify.app/">
-                        <img width="200" height="200" class="rounded border-2"
-                        src="assets/images/giticket.PNG" alt="Giticket app">
-                      </a>
-                      <!-- Contenido -->
-                      <div class="ml-4">
-                        <!-- Titulo fecha -->
-                        <div class="flex flex-wrap items-start">
-                          <div class="flex flex-no-wrap flex-1 items-center whitespace-nowrap">
-                            <a href="https://aleesmp-giticket.netlify.app/">
-                              <div class="ease-in-out">Giticket
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                  class="inline-block h-4 w-4" aria-hidden="true">
-                                  <path fill-rule="evenodd"
-                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clip-rule="evenodd"></path>
-                                </svg>
-                              </div>
-                            </a>
-                          </div>
-                          <!-- Fecha y tipo -->
-                          <div class="flex items-center justify-between gap-4">
-                            <div class="text-xs text-right text-gray-500 whitespace-nowrap uppercase">Mayo 2023</div>
-                            <div class="px-2 py-1 leading-none text-orange-400 uppercase border-2 border-orange-400 rounded">Académico</div>
-                          </div>
+                  <div class="detalles-proyecto flex items-start">
+                    <!-- Miniatura -->
+                    <a href="https://aleesmp-giticket.netlify.app/" class="miniatura">
+                      <img width="200" height="200" class="rounded border-2" src="assets/images/giticket.PNG" alt="Giticket app">
+                    </a>
+                    <!-- Contenido -->
+                    <div class="ml-4">
+                      <!-- Titulo fecha -->
+                      <div class="flex flex-wrap items-start">
+                        <div class="flex flex-no-wrap flex-1 items-center whitespace-nowrap">
+                          <a href="https://aleesmp-giticket.netlify.app/">
+                            <div class="ease-in-out">Giticket
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                          </a>
                         </div>
-
-                        <!-- Descripción -->
-                        <div class="mt-2 text-lg text-gray-500 transition-all duration-300 ease-in-out">
-                          Proyecto web para la venta de tickets de cine. <br>
-                          Incluye envío de reserva por correo, validación
-                          de ticket mediante QR y usuario administrador para 
-                          gestionar la BBDD mediante CRUD.
+                        <!-- Fecha y tipo -->
+                        <div class="flex items-center justify-between gap-4">
+                          <div class="text-xs text-right text-gray-500 whitespace-nowrap uppercase">Mayo 2023</div>
+                          <div class="px-2 py-1 leading-none text-orange-400 uppercase border-2 border-orange-400 rounded">Académico</div>
                         </div>
-
-                        <!-- Botones -->
-                        <div class="flex justify-between gap-4 mt-3 items-center">
-                          <a href="https://vuejs.org/" class="filter grayscale hover:grayscale-0">
-                              <img src="assets/images/vuejs.svg" alt="Vue JS" class="w-6 h-6">
-                          </a>
-                          <a href="https://tailwindcss.com/" class="filter grayscale hover:grayscale-0">
-                              <img src="assets/images/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
-                          </a>
-                          <a href="https://supabase.com/" class="filter grayscale hover:grayscale-0">
-                              <img src="assets/images/supabase.png" alt="Supabase" class="w-6 h-6">
-                          </a>
-                          <a href="https://vitejs.dev/" class="filter grayscale hover:grayscale-0">
-                              <img src="assets/images//vitejs.svg" alt="Vite JS" class="w-6 h-6">
-                          </a>
-                          <a href="https://github.com/AleesMP/giticket.git" class="flex items-center bg-tertiary hover:bg-gray-300 px-3 py-1 rounded-md">
-                            <img src="assets/images/github.svg" alt="Github" class="w-6 h-6 mr-1">
-                            <span>Código</span>
+                      </div>
+              
+                      <!-- Descripción -->
+                      <div class="mt-2 text-lg text-gray-500 transition-all duration-300 ease-in-out">
+                        Proyecto web para la venta de tickets de cine. <br>
+                        Incluye envío de reserva por correo, validación
+                        de ticket mediante QR y usuario administrador para
+                        gestionar la BBDD mediante CRUD.
+                      </div>
+              
+                      <!-- Botones -->
+                      <div class="flex justify-between gap-4 mt-3 items-center">
+                        <a href="https://vuejs.org/" class="filter grayscale hover:grayscale-0">
+                          <img src="assets/images/vuejs.svg" alt="Vue JS" class="w-6 h-6">
+                        </a>
+                        <a href="https://tailwindcss.com/" class="filter grayscale hover:grayscale-0">
+                          <img src="assets/images/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
+                        </a>
+                        <a href="https://supabase.com/" class="filter grayscale hover:grayscale-0">
+                          <img src="assets/images/supabase.png" alt="Supabase" class="w-6 h-6">
+                        </a>
+                        <a href="https://vitejs.dev/" class="filter grayscale hover:grayscale-0">
+                          <img src="assets/images/vitejs.svg" alt="Vite JS" class="w-6 h-6">
+                        </a>
+                        <a href="https://github.com/AleesMP/giticket.git" class="flex items-center bg-tertiary hover:bg-gray-300 px-3 py-1 rounded-md">
+                          <img src="assets/images/github.svg" alt="Github" class="w-6 h-6 mr-1">
+                          <span>Código</span>
                         </a>
                       </div>
-                      
-                      </div>
                     </div>
+                  </div>
                 </li>
-                <li class="mb-6 checkmark">
-                  <a href="/" class="flex items-start">
-                    <div class="detalles-proyecto flex items-start">
-                      <!-- Miniatura -->
-                      <a href="https://aleesmp-giticket.netlify.app/">
-                        <img width="200" height="200" class="rounded border-2"
-                        src="assets/images/giticket.PNG" alt="Giticket app">
-                      </a>
-                      <!-- Contenido -->
-                      <div class="ml-4">
-                        <!-- Titulo fecha -->
-                        <div class="flex flex-wrap items-start">
-                          <div class="flex flex-no-wrap flex-1 items-center whitespace-nowrap">
-                            <a href="https://aleesmp-giticket.netlify.app/">
-                              <div class="ease-in-out">Giticket
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                  class="inline-block h-4 w-4" aria-hidden="true">
-                                  <path fill-rule="evenodd"
-                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clip-rule="evenodd"></path>
-                                </svg>
-                              </div>
-                            </a>
-                          </div>
-                          <!-- Fecha y tipo -->
-                          <div class="flex items-center justify-between gap-4">
-                            <div class="text-xs text-right text-gray-500 whitespace-nowrap uppercase">Mayo 2023</div>
-                            <div class="px-2 py-1 leading-none text-orange-400 uppercase border-2 border-orange-400 rounded">Académico</div>
-                          </div>
-                        </div>
-
-                        <!-- Descripción -->
-                        <div class="mt-2 text-lg text-gray-500 transition-all duration-300 ease-in-out">
-                          Proyecto web para la venta de tickets de cine. <br>
-                          Incluye envío de reserva por correo, validación
-                          de ticket mediante QR y usuario administrador para 
-                          gestionar la BBDD mediante CRUD.
-                        </div>
-
-                        <!-- Botones -->
-                        <div class="flex justify-between gap-4 mt-3 items-center">
-                          <a href="https://vuejs.org/" class="filter grayscale hover:grayscale-0">
-                              <img src="assets/images/vuejs.svg" alt="Vue JS" class="w-6 h-6">
-                          </a>
-                          <a href="https://tailwindcss.com/" class="filter grayscale hover:grayscale-0">
-                              <img src="assets/images/tailwindcss.svg" alt="Tailwind CSS" class="w-6 h-6">
-                          </a>
-                          <a href="https://supabase.com/" class="filter grayscale hover:grayscale-0">
-                              <img src="assets/images/supabase.png" alt="Supabase" class="w-6 h-6">
-                          </a>
-                          <a href="https://vitejs.dev/" class="filter grayscale hover:grayscale-0">
-                              <img src="assets/images//vitejs.svg" alt="Vite JS" class="w-6 h-6">
-                          </a>
-                          <a href="https://github.com/AleesMP/giticket.git" class="flex items-center bg-tertiary hover:bg-gray-300 px-3 py-1 rounded-md">
-                            <img src="assets/images/github.svg" alt="Github" class="w-6 h-6 mr-1">
-                            <span>Código</span>
-                        </a>
-                      </div>
-                      
-                      </div>
-                    </div>
-                </li>
-                
               </ul>
             </div>
           </section>

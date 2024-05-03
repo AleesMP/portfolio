@@ -846,6 +846,26 @@ video {
     border-radius: 0.75rem;
   }
 
+  /* Miniatura */
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .detalles-proyecto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  .miniatura {
+    order: -1; /* Cambia el orden para que la miniatura aparezca primero */
+  }
+
+  .miniatura img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegura que la imagen se expanda correctamente */
+  }
+}
 /* --- */
 
 /* Switcher dark/light */
@@ -853,3 +873,4 @@ video {
   @apply hidden;
 }
 /* --- */
+
