@@ -780,13 +780,6 @@ video {
   
 /* --- */
 
-/* Animación emoji saludo */
-.emoji {
-  font-size: 100px;
-  animation: saludo 2.5s infinite;
-  transform-origin: 70% 70%;
-}
-
 @keyframes saludo {
   0% {
     transform: rotate(0deg);
@@ -847,7 +840,7 @@ video {
   }
 
   /* Miniatura */
-/* Estilos para dispositivos móviles */
+/* Estilo para moviles */
 @media screen and (max-width: 768px) {
   .detalles-proyecto {
     display: grid;
@@ -865,12 +858,6 @@ video {
     height: auto; /* Altura automática para mantener la proporción */
     display: block; /* Asegura que la imagen se expanda correctamente */
   }
-}
-/* --- */
-
-/* Switcher dark/light */
-.display-none {
-  @apply hidden;
 }
 /* --- */
 
