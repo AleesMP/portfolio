@@ -850,13 +850,13 @@ video {
   }
 
   .miniatura {
-    order: -1; /* Cambia el orden para que la miniatura aparezca primero */
+    order: -1;
   }
 
   .miniatura img {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
-    display: block; /* Asegura que la imagen se expanda correctamente */
+    width: 100%; 
+    height: auto; 
+    display: block;
   }
 }
 /* --- */
