@@ -753,6 +753,15 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+::-webkit-scrollbar {
+  width: 10px; 
+  background-color: #3B4252;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #E5E9F0;
+  border-radius: 5px;
+}
+
 /* Menu navegacion */
   /* Animación underline */
   .link-underline {
@@ -765,7 +774,7 @@ video {
   }
 
   .link-underline-black {
-    background-image: linear-gradient(transparent, transparent), linear-gradient(#3B4252, #E5E9F0)
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#3b4252, #E5E9F0)
   }
 
   .link-underline:hover {
@@ -779,34 +788,6 @@ video {
     text-decoration-thickness: 3px;
   }
   
-/* --- */
-
-@keyframes saludo {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4.0deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 /* --- */
 
 /* Proyectos */

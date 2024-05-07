@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     colors: {
-      'white': '#FFFFFF',
+      'white': '#FBFBFB',
       'primary': '#2E3440',
       'secondary': '#3B4252',
       'tertiary': '#E5E9F0',
