@@ -672,21 +672,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 52 64 / var(--tw-bg-opacity));
-}
-
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 66 82 / var(--tw-bg-opacity));
-}
-
-.bg-tertiary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 233 240 / var(--tw-bg-opacity));
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -748,11 +733,6 @@ video {
   font-weight: 700;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 ::-webkit-scrollbar {
   width: 10px; 
   background-color: #3B4252;
@@ -762,7 +742,42 @@ video {
   border-radius: 5px;
 }
 
-/* Menu navegacion */
+/* Colores */
+.bg-primary {
+background-color: #2e3440;
+}
+
+.bg-secondary {
+  background-color: #3b4252;
+}
+
+.bg-tertiary {
+  background-color: #434c5e;
+}
+
+.bg-button {
+  background-color: #5e81ac;
+}
+
+.text-primary {
+  color: #e5e9f0
+}
+
+.text-secondary {
+  color: #d8dee9;
+}
+
+.text-color {
+  color: #5e81ac;
+}
+
+/* --- */
+
+/* Menu nav */
+  section {
+    scroll-margin-top: 80px;
+  }
+  
   /* Animación underline */
   .link-underline {
     border-bottom-width: 0;
@@ -784,10 +799,10 @@ video {
 
   .active {
     text-decoration: underline;
-    text-decoration-color: #3B4252;
+    text-decoration-color: #434c5e;
     text-decoration-thickness: 3px;
   }
-  
+
 /* --- */
 
 /* Proyectos */

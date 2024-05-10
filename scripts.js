@@ -57,3 +57,17 @@ const $form = document.querySelector('#form')
       $buttonMailto.setAttribute('href', `mailto:alejandromperis@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
       $buttonMailto.click()
     }
+
+    $(document).ready(function(){
+      // Función para ajustar el desplazamiento al hacer clic en un enlace del navbar
+      $('a.menu-item').click(function(event){
+        event.preventDefault();
+        var navbarHeight = $('section.sticky').outerHeight();
+        var targetId = $(this).attr('href');
+        var targetOffset = $(targetId).offset().top - navbarHeight;
+        
+        $('html, body').animate({
+          scrollTop: targetOffset
+        }, 500);
+      });
+    });
