@@ -803,6 +803,9 @@ background-color: #2e3440;
     text-decoration-thickness: 3px;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
 /* --- */
 
 /* Proyectos */
