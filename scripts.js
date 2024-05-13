@@ -3,7 +3,7 @@ var toTopButton = document.getElementById("to-top-button");
 
 if (toTopButton) {
     window.onscroll = function() {
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        if (window.scrollY > 400) {
             toTopButton.classList.remove("hidden");
         } else {
             toTopButton.classList.add("hidden");
@@ -17,6 +17,7 @@ if (toTopButton) {
         });
     };
 }
+
 
 // Subrayado del menu al scrolear por seccion
 document.addEventListener("DOMContentLoaded", function() {

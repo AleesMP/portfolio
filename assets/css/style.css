@@ -809,55 +809,60 @@ background-color: #2e3440;
 /* --- */
 
 /* Proyectos */
-  /* Efecto desenfoque */
-  .highlight-on-hover li {
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-  }
+  /* efecto desenfoque */
+.highlight-on-hover li {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
 
-  /* Estilo para los elementos <li> que tienen hover */
-  .highlight-on-hover li:hover {
-    transform: scale(1.02) translateY(-3px);
-    filter: blur(0);
-  }
+  /* elementos <li> que tienen hover */
+.highlight-on-hover li:hover {
+  transform: scale(1.02) translateY(-3px);
+  filter: blur(0);
+}
 
-  /* Estilo para los elementos <li> que no tienen hover */
-  .highlight-on-hover:hover li:not(:hover) {
-    filter: blur(2px);
-  }
+  /* elementos <li> que no tienen hover */
+.highlight-on-hover:hover li:not(:hover) {
+  filter: blur(2px);
+}
 
-  /* Estilo del bg al hacer hover */
-  #lista-proyectos li .detalles-proyecto {
-    transition: background-color 0.3s ease, border-radius 0.3s ease;
-    padding: 1.5rem;
-    min-width: 300px;
-    min-height: 200px;
-    
-  }
+  /* bg al hacer hover */
+#lista-proyectos li .detalles-proyecto {
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  padding: 1.5rem;
+  min-width: 300px;
+  min-height: 200px;
 
-  #lista-proyectos li:hover .detalles-proyecto {
-    background-color: #3B4252;
-    border-radius: 0.75rem;
-  }
+}
 
-  /* Miniatura */
-/* Estilo para moviles */
+#lista-proyectos li:hover .detalles-proyecto {
+  background-color: #3B4252;
+  border-radius: 0.75rem;
+}
+
+.miniatura {
+  order: -1;
+}
+
+.miniatura img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 769px) {
+  .miniatura img {
+    width: 100px;
+    height: 60px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .detalles-proyecto {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     gap: 10px;
-    max-width: 100%; /* Added for mobile view */
-  }
-
-  .miniatura {
-    order: -1;
-  }
-
-  .miniatura img {
     max-width: 100%;
-    height: auto;
-    display: block;
   }
 }
 /* --- */
