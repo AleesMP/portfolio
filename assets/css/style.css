@@ -821,9 +821,9 @@ background-color: #2e3440;
 }
 
   /* elementos <li> que no tienen hover */
-.highlight-on-hover:hover li:not(:hover) {
+/* .highlight-on-hover:hover li:not(:hover) {
   filter: blur(2px);
-}
+} */
 
   /* bg al hacer hover */
 #lista-proyectos li .detalles-proyecto {
