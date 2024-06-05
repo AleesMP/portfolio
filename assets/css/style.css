@@ -817,7 +817,7 @@ background-color: #2e3440;
   /* elementos <li> que tienen hover */
 .highlight-on-hover li:hover {
   transform: scale(1.02) translateY(-3px);
-  /* filter: blur(0); */
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
 }
 
   /* elementos <li> que no tienen hover */
