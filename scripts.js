@@ -1,22 +1,27 @@
 // To-top-button
-var toTopButton = document.getElementById("to-top-button");
+document.addEventListener("DOMContentLoaded", function() {
+  var toTopButton = document.getElementById("to-top-button");
 
-if (toTopButton) {
-    window.onscroll = function() {
-        if (window.scrollY > 400) {
-            toTopButton.classList.remove("hidden");
-        } else {
-            toTopButton.classList.add("hidden");
-        }
-    };
+  function checkScroll() {
+      if (window.scrollY > 400) {
+          toTopButton.classList.remove("hide");
+          toTopButton.classList.add("show");
+      } else {
+          toTopButton.classList.remove("show");
+          toTopButton.classList.add("hide");
+      }
+  }
 
-    window.goToTop = function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
-}
+  window.addEventListener("scroll", checkScroll);
+  checkScroll(); // Verificar el scroll al cargar la página
+
+  window.goToTop = function() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  };
+});
 
 
 // Subrayado del menu al scrolear por seccion
