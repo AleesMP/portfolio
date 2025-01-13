@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 });
 
-
 // Subrayado del menu al scrolear por seccion
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll(".section");
@@ -47,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }
-  
     window.addEventListener("scroll", highlightMenuItem);
   });
   
